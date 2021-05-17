@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h3>Form</h3>
+    <form action="backend.php">
+        <label for="name">Name: </label>
+        <div></div><input type="text" name="my name" id="name"></div>
+        <br>
+        <br>
+        <!-- note 1 -->
+        <!-- don't use br tag here. this can be done in css -->
+        <div>Age: <input type="number" name="my age "></div>
+        <br>
+        <div>Email: <input type="email" name="my email"></div>
+        <!-- Name help the backend to help the email  -->
+        <br>
+        <div>Date: <input type="date" name="my date"></div>
+        <br>
+        <div>Time : <input type="datetime" name="my date time"></div>
+        <br>
+        <div><label for="eligibility">Are you eligible? :</label>
+            <input type="checkbox" name="my eligibility" id="eligibility">
+        </div>
+        <br>
+        <!-- note 2 -->
+        <!-- compare note 1 and 2 -->
+        <div>Are you sure? : <input type="checkbox" name="my ckeckbox" checked></div>
+        <br>
+        <div>Gender: Male<input type="radio" name="my gender"> Female <input type="radio" name="my gender"> Other <input
+                type="radio" name="my gender"></div>
+        <br>
+        <div>
+            <label for="vehicle">Vehicle</label>
+            <select name="my vehicle" id="vehicle">
+                <option value="2">2 Wheeler</option>
+                <option value="4" selected>4 Wheeler</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="my car" id="car">
+                <option value="SUV">SUV Car</option>
+                <option value="Seden">Seden Car</option>
+            </select>
+        </div>
+        <Br>
+        <div>
+            Write about yourself: <br> <textarea name="my text " cols="20" rows="10"></textarea>
+        </div>
+        <br>
+        <div><input type="reset" value=""></div>
+        <br>
+        <div><input type="submit" value="submit now"></div>
+    </form>
+</body>
+
+</html>
