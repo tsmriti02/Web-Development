@@ -5,13 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selectors in CSS</title>
+    <style>
+        /* class selector */
+        .greenpara{
+            color: seagreen;
+            background-color: yellow;
+        }
+        .bluepara{
+            color: blue;
+            background-color: yellowgreen;
+        }
+        /* id selector */
+        #paratwo{
+            color: red;
+            background-color: pink;
+        }
+        /* Element selector */
+        p{
+            color: pink;
+            background-color: red;
+        }
+        /* Grouping selector */
+        span, footer{
+            color: brown;
+            background-color: tan;
+        }
+    </style>
 </head>
 <body>
     <h3>Selectors in CSS</h3>
-    <p id="paraone">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, ducimus.</p>
-    <p id="paratwo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, ducimus.</p>
-    <p id="para3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, ducimus.</p>
-    <p id="parafour">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, ducimus.</p>
-    <p id="parafive">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, ducimus.</p>
+    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui alias reprehenderit quo nulla, nesciunt unde libero delectus amet iusto labore.</span>
+    <p id="paraone" class="bluepara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, ducimus.</p>
+    <p id="paratwo" class="redpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, ducimus.</p>
+    <p id="para3" class="bluepara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, ducimus.</p>
+    <p id="parafour" class="greenpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, ducimus.</p>
+    <p id="parafive" class="pinkpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, ducimus.</p>
+    <footer>footer</footer>
+    <!-- p{color: red} is element selector -->
+    <!-- #paraone{color:red} is id selector -->
+    <!-- .parared{color:red} is class selector -->
 </body>
 </html>
