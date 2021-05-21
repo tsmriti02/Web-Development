@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FONTS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- to import style from web link is important.  -->
+    <style>
+        p{
+            font-family: 'roboto, reggae one ,Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 18px;
+            line-height: 2cm;
+            font-style: italic;
+        }
+        /* above one is font stacking.if 1st one is not web safe 2nd will be used and so on 3rd and 4th */
+        /* line height provides gap between two lines. */
+        .bgsecondary{
+            background: pink;
+        }
+#mainheading{
+    color: red;
+    font-size: 24px;
+    line-height: 10.3em;
+    background-color: #ceec64;
+    font-weight: bold;
+}
+/* px is 1/96th od an inch. */
+/* em is mulple of parent font size. */
+span{
+    font-weight: bold;
+    font-style: italic;
+}
+
+    </style>
+</head>
+<body>
+    <h3 id="mainheading" class="bgprimary">FONTS</h3>
+    <p class="bgsecondary">Lorem ipsum dolor sit amet.</p>
+    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, repellendus?</span>
+    
+</body>
+</html>

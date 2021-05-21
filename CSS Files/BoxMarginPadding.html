@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box, Margin and Padding</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 5px 10px;
+            margin: 25px 25px;
+        }
+        /* * for universal selector */
+
+body{
+background-color:rgb(4, 80, 4) ;
+}   
+     .container {
+            background-color: rgb(240, 240, 132);
+            border: 2px solid rgb(233, 110, 110);
+            padding: 25px 50px;
+            /* padding: x(top/bottom), y(left/bottom); */
+            margin: 35px;
+            /* padding: 20px,50px,70px,10px;  */
+
+            /* padding top bottom left right left.  */
+
+            /* same for margin as well.  */
+
+            /* padding: 50px;
+margin: 50px; */
+
+            /*  we can set padding and margin like this
+    padding-top: 75px;
+    padding-bottom: 75px;
+    padding-right: 50px;
+    padding-left: 20px; */
+    border-radius: 50px;
+    width: 500px;
+    height: 500px;
+    /* id padding or margin is changed the width and height of the element also changes as both are added to the actual dimensions of the element. to eliminate this box-sizing is used  */
+    box-sizing: border-box;
+        }
+        /* check from developer tool aur set  */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="head1">Box</h2>
+        <P id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae iure modi aperiam consequatur
+            harum corporis dolor eveniet ducimus similique repellat fuga odio voluptate dolores illo, autem
+            reprehenderit quisquam est. Praesentium consequatur, asperiores totam accusamus quas non facilis harum odio
+            dolores ratione sequi nulla possimus deserunt optio cumque quaerat obcaecati beatae?!</P>
+    </div>
+    <div class="container">
+        <h2 id="head1">Margin</h2>
+        <P id="para2">Lorem ipsum dolor sit amet, consectetur adipisicing .elit. Labore, officia! Lorem ipsum, dolor sit
+            amet consectetur adipisicing elit. Illum quaerat est quas, a consequuntur cum, quos voluptates adipisci
+            maiores corrupti modi odio. Odit laudantium ab, minus aspernatur, accusamus illum expedita eius repudiandae
+            minima, quis ipsa! Eligendi odit culpa quas illum itaque, fugiat deleniti. Velit maxime iusto accusantium
+            facilis suscipit dolore.</P>
+    </div>
+    <div class="container">
+        <h2 id="head1">Padding</h2>
+        <P id="para3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, officia! Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Nemo cumque quam rem iure velit laborum impedit aperiam quisquam ullam,
+            necessitatibus eligendi veniam vel suscipit aliquid commodi soluta voluptas beatae nihil qui? Voluptates
+            optio commodi officiis rerum laboriosam doloribus doloremque ipsam eos at repellendus veritatis ex deserunt
+            eaque beatae repudiandae, debitis ut iusto cumque! Inventore error nobis voluptatibus sapiente alias, est
+            repellendus cupiditate fugiat perspiciatis quod quibusdam voluptatem tempora perferendis repudiandae,
+            aliquid nulla hic quaerat modi eius. Harum maiores rem eum?</P>
+    </div>
+
+</body>
+
+</html>
