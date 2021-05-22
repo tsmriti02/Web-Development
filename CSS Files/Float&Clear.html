@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alignment</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+        <style>
+        *{
+            clear: both;
+            }
+.container{
+            background: lightblue;
+    width: 900px;
+    border: 3px double rgb(80, 5, 95);
+margin: auto;
+/* to center the margin  */
+}
+.item{
+border: 2px solid rgb(105, 105, 105);
+border-radius: 5px;
+padding: 2px 2px;
+margin: 5px 5px;
+background: rgb(253, 212, 219) ;
+}
+.para{
+font-family: 'Pattaya', sans-serif;
+    text-align: justify;
+}
+.head{
+    color: red;
+}
+#fruits{
+float: left;
+width: 50%;
+clear: both;
+}
+#computer{
+float: right;
+width: 50%;
+clear: both;
+}
+#stationar{
+float: left;
+width: 50%;
+clear: both;
+/* clear to avoid overlapping left right both  */
+}
+h2{
+font-family: 'Pattaya', sans-serif;
+text-align: center;
+
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>WELCOME</h2>
+        <div id="fruits" class="item">
+            <h4 class="head">FRUITS</h4>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, totam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam ratione officia excepturi enim. Error, nostrum.
+            </p>
+        </div>
+        <div id="computer" class="item">
+            <h4 class="head">COMPUTER</h4>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates molestias incidunt adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur provident sequi porro et dolorum iste.
+            </p>
+        </div>
+        <div id="stationary" class="item">
+            <h4 class="head">STATIONARY</h4>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptas, tempora sint ab totam obcaecati? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, rem quae? Voluptates maiores dolorum odio?
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

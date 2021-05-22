@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSEUDO SELECTORS & DESIGNING</title>
+    <style>
+.container{
+    border: 5px solid rgb(46, 2, 46);
+    background-color: pink;
+    padding: 50px;
+    margin: 10px auto;
+    width: 500px;
+}
+a{
+text-decoration: none;
+}
+a:hover{
+    color:rgb(0, 0, 0);
+    background: blue;
+}
+a:visited{
+    color: rgb(255, 220, 22);
+    background-color: white;
+    font-weight: normal;
+}
+a:active{
+    color: blue;
+    background-color: yellow;
+}
+button{
+    color: blue;
+}
+button:hover{
+    color: black;
+ background-color: blue;
+}
+.btn{
+    font-family: cursive;
+    font-weight: bold;
+    background: crimson;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 4px;
+}
+    </style>
+</head>
+<body>
+    <div class="container" id="c1">
+        <h3>Heading</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sapiente placeat omnis voluptatum pariatur voluptatem beatae quaerat nam vero assumenda?</p>
+        <a href="https://www.yahoo.com/" class="btn">Read More</a>
+        <a href="https://www.youtube.com/" class="btn">Read More</a>
+        <a href="https://www.primevideos.com/" class="btn">Read More</a>
+        <a href="https://www.netflix.com/" class="btn">Read More</a>
+        <button class="btn">Contact Us</button>
+    </div>
+</body>
+</html>
