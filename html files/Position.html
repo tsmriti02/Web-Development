@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position </title>
+    <style>
+.container{
+    border: 2px solid black;
+    background-color: blanchedalmond;
+    height: 2500px;
+}
+    /* position: static(default), absolute, relative, fixed, sticky. */
+.box{
+    display: inline-block;
+    border: 2px solid red;
+    width: 150px;
+    height:150px;
+margin: 2px;
+}
+#box3{
+    /* relative to its normal position.  */
+    /* position: relative; */
+    /* with relative as position top right left and bottom all can be set.  */
+    /* position: absolute;
+    top: 55px;
+    left: 150px; */
+    /* this means it will create gap in its original position. to avoide this absolute shoud be used. absolute is with referance to the parent.  */
+    /* position: fixed;
+    right: 10px;
+    bottom: 5px; */
+    /* position fixed relative to the brower window  */
+position: sticky;
+top: 5px;
+ }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">Chat</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>
