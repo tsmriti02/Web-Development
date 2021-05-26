@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-index</title>
+    <style>
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+        #box1{
+            position: relative;
+            top: 75px;
+            z-index: 50;
+            /* z-index is set to give preference in the overlapping elements  */
+            /* default position is static for z-index to work the position should be relative, absolute, sticky and fixed */
+            background-color: green;
+            }
+        #box2{
+            position: relative;
+            top: 15px;
+            /* display: none; */
+            /* with display space is not retained  */
+            /* visibility: hidden;  */
+            /* visibility space is retained  */
+            background-color: red;
+            }
+        #box3{background-color: blue;}
+        #box4{background-color:yellow;}
+    </style>
+</head>
+<body>
+    <!-- div.box#box$*4 $ for numbers  -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>
